@@ -134,6 +134,37 @@
             pointer-events: none;
         }
 
+        .hero-watermark {
+            position: absolute;
+            top: 50%;
+            right: -5%;
+            transform: translateY(-50%);
+            width: min(500px, 50vw);
+            height: min(500px, 50vw);
+            opacity: 0.04;
+            background-image: url('Captura de pantalla 2026-05-23 115415.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero-watermark-left {
+            position: absolute;
+            bottom: -10%;
+            left: -8%;
+            width: min(400px, 40vw);
+            height: min(400px, 40vw);
+            opacity: 0.025;
+            background-image: url('Captura de pantalla 2026-05-23 115415.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            pointer-events: none;
+            z-index: 0;
+        }
+
         .hero-pattern {
             position: absolute;
             inset: 0;
@@ -719,6 +750,8 @@
     <!-- ===== HERO ===== -->
     <section class="hero" id="inicio">
         <div class="hero-pattern"></div>
+        <div class="hero-watermark"></div>
+        <div class="hero-watermark-left"></div>
         <div class="container position-relative">
             <div class="row align-items-center">
                 <div class="col-lg-5 text-center mb-5 mb-lg-0">
